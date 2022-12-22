@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="heading">
+                <h1>Shubham's Weather App</h1>
+            </div>
+        </div>
+    </header>
+    <!-- Header -->
+    <main>
+        <section>
+            <div class="container">
+                <div class="showData">
+                    <div class="getWeather">
+                        <button id="getWeather">Get Weather</button>
+                        <ul id="cityList">
+                            <li>City</li>
+                            <li>London</li>
+                            <li>New York</li>
+                            <li>Los Angeles</li>
+                            <li>Las Vegas</li>
+                        </ul>
+                    </div>
+                    <div class="table">
+                        <div class="searchForm">
+                            <form id = "form">
+                                <div class="searchField">
+                                    <input type="text" name="search" id="search" placeholder="City Name">
+                                    <input type="submit" value="Search">
+                                </div>
+                            </form>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>City</th>
+                                    <th>Descrition</th>
+                                    <th>Temprature (C)</th>
+                                    <th>Pressure (hPa)</th>
+                                    <th>Data age hrs()</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody">
+                                <tr>
+                                    <td colspan="6">No Data</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>  
+                </div>
+        </section>
+    </main>
+<script src="./assets/js/index.js"></script>
+</body>
+</html>

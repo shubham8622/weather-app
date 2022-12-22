@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+:root{
+    --bgColor:#4472C4;
+    --whiteColor:#ffffff;
+    --blackColor:#000000;
+}
+header{
+    background-color:var(--bgColor) ;
+    color: var(--whiteColor);
+}
+.container{
+    max-width: 1440px;
+    padding-inline: 1rem;
+    margin-inline: auto;
+}
+.heading{
+    padding: 1rem 0;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.showData {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.getWeather {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-right: 3px solid var(--blackColor);
+    padding-right:3rem;
+    padding-top: 2rem;
+}
+.getWeather button{
+    background-color: var(--bgColor);
+    color: var(--whiteColor);
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+.getWeather ul {
+    list-style: none;
+}
+.getWeather ul li{
+    border: 1px solid var(--blackColor);
+    padding: 0.5rem;
+}
+.getWeather ul li:first-child {
+    background-color: var(--bgColor);
+    color: var(--whiteColor);
+}
+.table {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 85%;
+    padding-inline: 2rem;
+}
+.searchForm{
+    align-self: flex-end;
+}
+.searchField {
+    border: 1px solid black;
+    max-width: max-content;
+    border-radius: 7px;
+    /* padding: 0.2rem; */
+}
+
+input {
+    padding: 0.3rem;
+    border: none;
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: var(--bgColor);
+    color: var(--whiteColor);
+    padding: 0.5rem 1rem;
+    border-radius: 7px;
+}
+::placeholder{
+    color: var(--blackColor);
+    font-weight: 600;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,td {
+    border: 1px solid;
+    padding: 1rem;
+}
+th{
+    background-color: var(--bgColor);
+    color: var(--whiteColor);
+}
+td {
+    text-align: center;
+}
+td input[type="text"] {
+    border: 1px solid;
+}
+.getWeather ul li.green{
+    border: 3px solid green;
+}
+tr{
+    transition: all 0.3 linear;
+}
+tr.yellow{
+    background-color: rgb(110, 110, 7);
+}
